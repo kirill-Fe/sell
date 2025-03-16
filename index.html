@@ -13,7 +13,10 @@
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            background-color: #f8f9fa;
+            /* Заменяем background-color на градиент для body */
+            background: linear-gradient(45deg, #667eea, #764ba2, #6a82fb, #9f6ea3);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite; /* Увеличил время анимации для фона */
             color: #343a40;
             line-height: 1.7;
         }
@@ -26,14 +29,15 @@
 
         /* Шапка сайта */
         header {
-           /* Заменяем background-color на градиент */
             background: linear-gradient(45deg, #667eea, #764ba2, #6a82fb, #9f6ea3);
             background-size: 300% 300%;
-            animation: gradientAnimation 12s ease infinite; /* Добавляем анимацию */
+            animation: gradientAnimation 12s ease infinite;
             color: #fff;
             padding: 50px 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Добавляем текст-тень для улучшения читаемости на фоне градиента */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         @keyframes gradientAnimation {
@@ -69,10 +73,20 @@
 
         section h2 {
             margin-bottom: 25px;
-            border-bottom: 3px solid #5e72e4; /* Изменен цвет полосы */
+            border-bottom: 3px solid #5e72e4;
             padding-bottom: 12px;
             font-size: 2.2em;
-            color: #5e72e4; /* Изменен цвет заголовка */
+            color: #5e72e4;
+             /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+ /* Улучшаем читаемость онлайн и оффлайн секций */
+        .online-opportunities,
+        .offline-opportunities {
+            background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         /* Блоки с возможностями заработка */
@@ -100,25 +114,31 @@
         .opportunity h3 {
             margin-bottom: 12px;
             font-size: 1.6em;
+             /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .opportunity p {
             margin-bottom: 20px;
             color: #555;
+             /* Добавляем небольшую тень для текста */
+            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
         }
 
         .learn-more {
             display: inline-block;
-            background-color: #5e72e4; /* Изменен цвет кнопки */
+            background-color: #5e72e4;
             color: #fff;
             padding: 12px 25px;
             text-decoration: none;
             border-radius: 6px;
             transition: background-color 0.3s ease;
+             /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .learn-more:hover {
-            background-color: #4c63b6; /* Изменен цвет при наведении */
+            background-color: #4c63b6;
         }
 
         /* Секция с Telegram */
@@ -127,17 +147,23 @@
             padding: 40px 0;
             text-align: center;
             border-radius: 8px;
+             /* Добавляем большую тень для секции */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .suggest-idea h2 {
             color: #495057;
             border-bottom: none;
+        /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .suggest-idea p {
             font-size: 1.1em;
             color: #6c757d;
             margin-bottom: 25px;
+             /* Добавляем небольшую тень для текста */
+            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
         }
 
         .telegram-link {
@@ -149,6 +175,8 @@
             border-radius: 7px;
             font-weight: 500;
             transition: background-color 0.3s ease;
+             /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .telegram-link:hover {
@@ -162,6 +190,8 @@
             text-align: center;
             padding: 25px 0;
             font-size: 0.9em;
+              /* Добавляем текст-тень для улучшения читаемости */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         /* Адаптивность */
